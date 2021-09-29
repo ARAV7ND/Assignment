@@ -1,0 +1,104 @@
+1.Use git status to see which branch you are on.
+A) On branch master
+
+   No commits yet
+
+   nothing to commit (create/copy files and use "git add" to track)
+
+
+2.What does git log look like?
+A) fatal: your current branch 'master' does not have any commits yet 
+
+
+3.Create a file
+A) echo "Hello World">file.txt
+
+
+4).What does the output from git status look like now?
+A) On branch master
+
+   No commits yet
+
+   Untracked files:
+     (use "git add <file>..." to include in what will be committed)
+          file.txt
+
+    nothing added to commit but untracked files present (use "git add" to track)
+
+
+5).add the file to the staging area ?
+A) git add file.txt
+ 
+
+6).How does git status look now?
+A) On branch master
+
+   No commits yet
+
+   Changes to be committed:
+      (use "git rm --cached <file>..." to unstage)
+          new file:   file.txt
+
+
+7).commit the file to the repository?
+A) git commit -m "first commit"      
+
+
+8).How does git status look now?
+A) On branch master
+   nothing to commit, working tree clean
+
+
+9).Change the content of the file you created earlier ?
+A) echo "Hello Folks">file.txt
+
+
+10).What does git status look like now?
+A)  On branch master
+    Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+            modified:   file.txt
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+
+
+11).add the file change ?
+A)  git add file.txt
+
+
+12).What does git status look like now?
+A)  On branch master
+    Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+            modified:   file.txt
+
+
+13).Change the file again ?
+A)  echo hey>>file.txt
+
+
+14).Make a commit ?
+A)  git commit -m "second commit"
+    [master f1377e9] second commit
+    1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+15).What does the status look like now? The log?
+A)   On branch master
+        Changes not staged for commit:
+        (use "git add <file>..." to update what will be committed)
+        (use "git restore <file>..." to discard changes in working directory)
+                modified:   file.txt
+
+        no changes added to commit (use "git add" and/or "git commit -a")
+
+
+16).Add and commit the newest change?
+A)  On branch master
+    Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+            modified:   file.txt
+
+    no changes added to commit (use "git add" and/or "git commit -a")
